@@ -120,7 +120,7 @@ URLS = (
     "https://swapi.dev/api/people/3",
 )
 
-async def fetch_character_data(url: str, session: aiohttp.ClientSession) -> Optional[Person]:
+async def fetch_character_data(url: str, session: aiohttp.ClientSession) -> Person | None:
     """
     Fetch character data from a single URL with error handling
     
